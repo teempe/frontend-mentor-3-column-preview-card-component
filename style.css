@@ -24,8 +24,6 @@
 }
 
 img {
-    width: 100%;
-    height: auto;
     display: block;
 }
 
@@ -33,13 +31,72 @@ body {
     font-size: 0.9375rem;
     font-family: var(--ff-base);
     font-weight: var(--fw-regular);
+    color: var(--very-light-gray);
     background-color: var(--very-light-gray);
+    padding: 0 24px;
 
     display: grid;
     place-items: center;
     min-height: 100vh;
 }
 
+/* ------- FOR DEV ONLY ------- */
+.card {
+    width: calc(375px - 48px);
+    /* width: 307px; */
+}
+
+.card-section {
+    /* color: red; */
+}
+/* ---------------------------- */
+
+.card {
+    border-radius: 0.375rem;
+    overflow: hidden;
+}
+
+.card-section {
+    background-color: var(--section-background);
+    padding: 3rem;
+}
+
+.section-icon {
+    margin-bottom: 2.125rem;
+}   
+
+.section-title {
+    font-family: var(--ff-heading);
+    font-weight: var(--fw-bold);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1.625rem;
+}
+
+.section-text {
+    line-height: 1.7;
+    margin-bottom: 1.313rem;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid var(--very-light-gray);
+    border-radius: 1.73em;
+    padding: 0.87em 2em;
+    background-color: var(--very-light-gray);
+    color: var(--section-background);
+    transition: background-color 0.2s ease-out;
+}
+
+.button:hover {
+    background-color: var(--section-background);
+    color: var(--very-light-gray);
+}
+
+.sedan-section {
+    --section-background: var(--bright-orange); 
+}
 
 /* FOOTER */
 .attribution { 
@@ -52,3 +109,10 @@ body {
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+
+/* MEDIA QUERIES */
+/* @media only screen and (min-width: 1000px) {
+    .section-text {
+        margin-bottom: 80px;
+    }
+} */
