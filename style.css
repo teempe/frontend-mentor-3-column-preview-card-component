@@ -98,6 +98,14 @@ body {
     --section-background: var(--bright-orange); 
 }
 
+.suv-section {
+    --section-background: var(--dark-cyan);
+}
+
+.luxury-section {
+    --section-background: var(--very-dark-cyan);
+}
+
 /* FOOTER */
 .attribution { 
     font-size: 11px; 
